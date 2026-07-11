@@ -1,4 +1,5 @@
 import React from 'react';
+import { IAAgentPanel } from '../aiAgent/IAAgentPanel';
 import { Navbar } from '../navbar/Navbar';
 import { Footer } from '../footer/Footer';
 
@@ -12,6 +13,8 @@ export function MainLayout({ children }) {
       <div className="flex-grow">
         {children}
       </div>
+
+      <IAAgentPanel />
       
       {/* El Footer se renderiza siempre abajo */}
       <Footer />

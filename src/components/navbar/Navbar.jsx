@@ -1,5 +1,6 @@
 import React from 'react';
 import { ShoppingCart, Mountain } from 'lucide-react';
+import { IAAgentTrigger } from '../aiAgent/IAAgentTrigger';
 
 export const Navbar = ({ onTabChange }) => (
   <nav className="border-b border-zinc-800 bg-zinc-950/80 backdrop-blur-md sticky top-0 z-50">
@@ -13,9 +14,10 @@ export const Navbar = ({ onTabChange }) => (
           <button onClick={() => onTabChange('inicio')} className="hover:text-emerald-500 transition-colors">Inicio</button>
           <button onClick={() => onTabChange('tienda')} className="hover:text-emerald-500 transition-colors">Tienda</button>
         </div>
+         <IAAgentTrigger />
         <button className="relative p-2 hover:bg-zinc-800 rounded-full transition-colors text-white">
           <ShoppingCart className="h-6 w-6" />
-        </button>
+        </button>       
       </div>
     </div>
   </nav>
